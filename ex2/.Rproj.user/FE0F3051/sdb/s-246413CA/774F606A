@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nfor (i in 1:50000) {\n  x[i] <- sum(sample(1:6,2,replace=TRUE))\n}\n\n#x <- rnorm(10000, mean = 7, sd = 2.4)\nprint(x)\ncat(\"Media =\",print(mean(x), digits=3, zero.print = \".\"),\"\\n\")\ncat(\"Desvio Padrao =\",print(sd(x), digits=3, zero.print = \".\"),\"\\n\")\ncat(\"Mediana =\",print(median(x), digits=3, zero.print = \".\"),\"\\n\")\ncat(\"Variancia =\",print(var(x), digits=3, zero.print = \".\"),\"\\n\")\nhist(x, main = \"Histograma do experimento\")\n#abline(v=mean(x))\n\n# dunif(x, min = 0, max = 1, log = FALSE)\n# punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n# qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n# runif(n, min = 0, max = 1)\n# \n# dbinom(x, size, prob, log = FALSE)\n# pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n# qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n# rbinom(n, size, prob)\n# \n# dnorm(x, mean = 0, sd = 1, log = FALSE)\n# pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n# qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n# rnorm(n, mean = 0, sd = 1)\n# \n# dtriangle(x, a=0, b=1, c=(a+b)/2)\n# ptriangle(q, a=0, b=1, c=(a+b)/2)\n# qtriangle(p, a=0, b=1, c=(a+b)/2)\n# rtriangle(n, a=0, b=1, c=(a+b)/2)",
+    "created" : 1471959809709.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3430845329",
+    "id" : "774F606A",
+    "lastKnownWriteTime" : 1471820104,
+    "last_content_update" : 1471959868507,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/list1/R/test.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

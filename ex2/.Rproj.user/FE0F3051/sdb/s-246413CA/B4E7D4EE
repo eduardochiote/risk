@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#'  Draw the frequency graph.\n#'  \n#'  @name draw \n#' \n#'  @param data Vector of frequency\n#'  @param name Graph title\n#'  @param filename File name \n#'   \n#'  @description Draw the frequency graph.\n#'  \n#'  @export\n#'  \n#'  @keywords \n#'\n#'  @family draw\n#'\n#'  @examples\n#'\n#' draw(c(0,1,2), \"title\", to.file = TRUE, \"output/draw.png\")\n#' \n \ndraw <- function(data, name = \"Graphic\", to.file=FALSE, filename=\"output/draw.png\") {\n    if(to.file) {png(filename)}\n    plot(data, type = \"h\", \n         col = \"red\", lwd = 4,\n         xlab = \"Round\", \n         ylab = \"Frequency\", ylim = c(0,1))\n    title(name)\n    abline(h = 0.5, col = \"blue\", lwd = 2)\n    if(to.file) {dev.off()}\n  }",
+    "created" : 1471960392762.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1925514562",
+    "id" : "B4E7D4EE",
+    "lastKnownWriteTime" : 1468768072,
+    "last_content_update" : 1468768072,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/list1/R/draw.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

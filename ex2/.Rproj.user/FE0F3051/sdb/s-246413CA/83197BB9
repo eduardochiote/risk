@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "taxi<-function(){\n  library (triangle)\n  \n  #simulando 20 taxis\n  Ns<-1000\n  r<-vector(length=Ns)\n  for (i in 1:Ns){\n    #vetor de consumos\n    c<-rtriangle(20,40,60,48)\n    p<-rtriangle(20,3.1,4,3.8)\n    g<-sum(c*p)\n    r[i]<-g\n  }\n  r\n}",
+    "created" : 1471958403874.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "925346101",
+    "id" : "83197BB9",
+    "lastKnownWriteTime" : 1471880087,
+    "last_content_update" : 1471880087,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/ex2/R/taxi.r",
+    "project_path" : "R/taxi.r",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

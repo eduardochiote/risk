@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "taxi2<-function(){\n  library (triangle)\n  \n  #simulando 1 taxis\n  Ns<-1000\n  r<-vector(length=Ns)\n  c<-rtriangle(Ns,40,60,48)\n  p<-rtriangle(Ns,3.1,4,3.8)\n  g<-c*p\n  mg<-mean(g)\n  varg<-var(g)\n  #m?dia e variancia para 20 carros\n  m20<-20*mg\n  v20<-20*varg\n  d20<-v20^0.5\n  r<-list(m20,d20)\n  r\n}",
+    "created" : 1471959549632.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1127841134",
+    "id" : "B622D769",
+    "lastKnownWriteTime" : 1471880087,
+    "last_content_update" : 1471880087,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/ex2/R/taxi2.r",
+    "project_path" : "R/taxi2.r",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

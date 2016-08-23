@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "taxi3<-function(){\n  meanc<-(40+48+60)/3\n  meanp<-(3.1+4+3.8)/3\n  varc<-(40^2+48^2+60^2-40*48-40*60-48*60)/18\n  varp<-(3.1^2+4^2+3.8^2-3.1*4-3.1*3.8-3.8*4)/18\n  mg<-meanc*meanp\n  varg<-meanp^2*varc+meanc^2*varp\n  m20<-20*mg\n  var20<-20*varg\n  dp20<-var20^0.5\n  r<-list(m20,dp20)\n  r\n}",
+    "created" : 1471959558068.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4150786212",
+    "id" : "55674DA8",
+    "lastKnownWriteTime" : 1471880087,
+    "last_content_update" : 1471880087,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/ex2/R/taxi3.R",
+    "project_path" : "R/taxi3.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

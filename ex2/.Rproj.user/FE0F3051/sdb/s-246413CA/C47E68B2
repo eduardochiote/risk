@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "esc <- c(75,82.5,92.5)\nfd <- c(57.5,67.5,77.5)\nest <- c(430,445,472.5)\ntel <- c(140,145,157.5)\nacab <- c(72.5,92.5,107.5)\n\n\nxmed <- mean(esc) + mean(fd) + mean(est) + mean(tel) + mean(acab)\n\nxvar <- var(esc) + var(fd) + var(est) + var(tel) + var(acab)\n",
+    "created" : 1471959818388.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1049825404",
+    "id" : "C47E68B2",
+    "lastKnownWriteTime" : 1468768072,
+    "last_content_update" : 1468768072,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/list1/R/draf.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
