@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Exercício\n# A frota de uma empresa de taxi é composta por 20 veículos. Cada uma deles\n# consome (40,60,58) litros de gasolina por dia a um custo variável de\n# (3.1,4.0,3.8) reais por litro.\n# \n# Crie 3 modelos de risco de custo para o gasto diário da empresa de taxi.\n# 1-simulando gastos individuais para cada um dos 20 taxis da frota\n# 2-simulando o gasto diário de um taxi e usando o TCL\n# 3-usando a fórmula aproximada para o produto de 2 VAs e aplicando o TCL\n\nlibrary (triangle)\n\n# 1-simulando gastos individuais para cada um dos 20 taxis da frota\n\nsize <- 10000\ntotal <- vector(length=size)\n\nfor(i in 1:size) {\n  gas <- rtriangle(n=20,a=40,b=60,c=58)\n  price <- rtriangle(n=20,a=3.1,b=4.0,c=3.8)\n  cost <- gas*price\n  total[i] <- sum (cost)\n}\n\naverage <- mean(total)\nvariance <- var(total)\nstandardDeviation <- sd(total)\nmedian <- median(total)\n\ncat(\"Media =\",average,\"\\n\")\ncat(\"Variancia =\",variance,\"\\n\")\ncat(\"Desvio Padrao =\",standardDeviation,\"\\n\")\ncat(\"Mediana =\",median,\"\\n\")\n\nh<-hist(total, breaks=10, density=10, col=\"lightgray\", xlab=\"Despesa\", main=\"Gasto Total Diário com Combustível\") \n\nxfit<-seq(min(total),max(total),length=40) \nyfit<-dnorm(xfit,mean=mean(total),sd=sd(total)) \nyfit <- yfit*diff(h$mids[1:2])*length(total) \nlines(xfit, yfit, col=\"black\", lwd=1)\n\nabline(v = average, col = \"black\", lwd = 1)\n\n",
+    "created" : 1471998592695.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2593277970",
+    "id" : "833524E",
+    "lastKnownWriteTime" : 1471999043,
+    "last_content_update" : 1471999043181,
+    "path" : "C:/Users/eduar/Mestrado/workspace/risk/ex2/R/ex2a.R",
+    "project_path" : "R/ex2a.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
