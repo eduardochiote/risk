@@ -12,16 +12,21 @@ library(triangle)
 
 size <- 10000
 
-mediaDuracao <- (3.75 + 5.5 + 4.25) / 3
-varianciaDuracao <- (3.75^2 + 5.5^2 + 4.25^2 - 3.75*5.5 - 3.75*4.24 - 5.5*4.25) / 18
+# m = (a+m+b)/3
+mediaDuracao <- (3.75 + 4.25 + 5.5) / 3
+# s2 = (a(a-m)+b(b-a)+m(m-b))/18
+varianciaDuracao <- (3.75*(3.75-4.25)+5.5*(5.5-3.75)+4.25*(4.25-5.5))/18
 
-media <- 562 * 7.5 * mediaDuracao 
-variancia <- 562 * 7.5 * varianciaDuracao
+# m1 = c1*m + c2
+media <- 562 * 7.5 * mediaDuracao
+# s21= c1^2*s2
+variancia <- 562 * (7.5^2) * varianciaDuracao
+# d1=s21^0.5
 desvio <- variancia^0.5
-funcp <- ecdf(total)
 
 total <- rnorm(size, mean=media, sd=desvio)
-#total <- qnorm(percentuais, mean=18967, sd = 65.4)
+
+funcp <- ecdf(total)
 
 cat("Media =", media,"\n")
 cat("Variancia =", variancia,"\n")
