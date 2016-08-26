@@ -16,7 +16,7 @@ mediaDuracao <- (3.75 + 5.5 + 4.25) / 3
 varianciaDuracao <- (3.75^2 + 5.5^2 + 4.25^2 - 3.75*5.5 - 3.75*4.24 - 5.5*4.25) / 18
 
 media <- 562 * 7.5 * mediaDuracao 
-variancia <- 562 * 7.5 * varianciaDuracao
+variancia <- ((562*7.5)^2) * varianciaDuracao
 desvio <- variancia^0.5
 funcp <- ecdf(total)
 
