@@ -12,13 +12,6 @@ library(triangle)
 
 size <- 10000
 
-<<<<<<< HEAD
-mediaDuracao <- (3.75 + 5.5 + 4.25) / 3
-varianciaDuracao <- (3.75^2 + 5.5^2 + 4.25^2 - 3.75*5.5 - 3.75*4.24 - 5.5*4.25) / 18
-
-media <- 562 * 7.5 * mediaDuracao 
-variancia <- ((562*7.5)^2) * varianciaDuracao
-=======
 # m = (a+m+b)/3
 mediaDuracao <- (3.75 + 4.25 + 5.5) / 3
 # s2 = (a(a-m)+b(b-a)+m(m-b))/18
@@ -29,7 +22,6 @@ media <- 562 * 7.5 * mediaDuracao
 # s21= c1^2*s2
 variancia <- 562 * (7.5^2) * varianciaDuracao
 # d1=s21^0.5
->>>>>>> 3fae9716cb092a5fa8a71d1454340b3ab984e3ef
 desvio <- variancia^0.5
 
 total <- rnorm(size, mean=media, sd=desvio)
